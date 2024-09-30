@@ -28,7 +28,7 @@ p {
 }
 
 img {
-  display: block;
+  display: block; /* Make images block elements */
   margin: 0 auto; /* Center image */
   width: 100%; /* Responsive image */
   max-width: 400px; /* Maintain max size */
@@ -36,7 +36,7 @@ img {
 
 a {
   color: #007bff; /* Blue link color */
-  text-decoration: none;
+  text-decoration: none; /* Remove underline from links */
 }
 
 a:hover {
@@ -47,7 +47,7 @@ a:hover {
 /* Navigation Styles */
 nav ul {
   list-style-type: none; /* Remove default list styling */
-  padding: 0;
+  padding: 0; /* Remove default padding */
   display: flex; /* Use flexbox for horizontal alignment */
   justify-content: center; /* Center the navigation items */
   background-color: #006400; /* Dark green background */
@@ -59,7 +59,7 @@ nav ul li {
 
 nav ul li a {
   color: white; /* White text for links */
-  padding: 0.5rem 1rem; /* Padding for clickable area */
+  padding: 0.5rem 1rem; /* Add padding for clickable area */
 }
 
 nav ul li a:hover {
@@ -71,15 +71,6 @@ nav ul li a:hover {
   width: 90%; /* Width limit for content */
   margin: 0 auto; /* Center the wrapper */
   max-width: 1200px; /* Ensure it's not too wide */
-}
-
-/* Flexbox layout for main content */
-main {
-  display: flex;
-  flex-direction: row; /*set flex dirction to row */
-  flex-wrap: wrap; /* Allow wrap for smaller screens */
-  gap: 1.5rem; /* Space between elements */
-  justify-content: space-between; /*space between main elements */
 }
 
 /* Section Styles */
@@ -135,7 +126,7 @@ input[type="checkbox"] {
 button[type="submit"] {
   background-color: #006400; /* Dark green for background */
   color: white; /* White text for the button */
-  padding: 0.75rem;
+  padding: 0.75rem; /* Padding for the button */
   margin-top: 1.5rem; /* Space above the button */
   border: none; /* Remove default border */
   border-radius: 4px; /* Rounded corners */
@@ -145,13 +136,14 @@ button[type="submit"] {
 
 button[type="submit"]:hover {
   background-color: #004c00; /* Darker green on hover */
+  transition: background-color 0.3s ease; /* smooth color transition */
 }
 
 /* Footer Styles */
 footer {
   text-align: center; /* Center align the footer text */
   margin-top: 2rem; /* Space above the footer */
-  padding: 1rem;
+  padding: 1rem; /* Internal padding */
   background-color: #f0f0f0; /* Light gray background */
   border-top: 1px solid #ccc; /* Light border on top of footer */
 }
