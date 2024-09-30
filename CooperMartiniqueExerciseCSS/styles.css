@@ -1,0 +1,100 @@
+/* General Styles */
+* {
+  box-sizing: border-box; /* Apply alternative box model */
+}
+
+body {
+  font-family: "Arial", sans-serif; /* Font family with a fallback */
+  font-size: 1rem; /* Use rem for font size */
+  line-height: 1.6; /* Increase readability */
+  color: #333; /* Text color */
+  background-color: #f9f9f9; /* Light background color */
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #006400; /* Dark green for headers */
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 100%; /* Responsive image */
+  max-width: 400px; /* Maintain max size */
+}
+
+a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* Darker color on hover */
+  text-decoration: underline;
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #006400; /* Dark green background */
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: white; /* White text for links */
+  padding: 0.5rem 1rem;
+}
+
+nav ul li a:hover {
+  background-color: #004c00; /* Darker green on hover */
+}
+
+/* Wrapper Styles */
+.wrapper {
+  width: 90%;
+  margin: 0 auto; /* Center the wrapper */
+  max-width: 1200px; /* Ensure it's not too wide */
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background-color: #f0f0f0; /* Light gray background */
+  border-top: 1px solid #ccc;
+}
+
+footer a {
+  color: #007bff;
+}
+
+footer a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

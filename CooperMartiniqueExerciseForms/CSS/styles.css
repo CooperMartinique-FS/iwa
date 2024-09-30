@@ -1,0 +1,166 @@
+/* General Styles */
+* {
+  box-sizing: border-box; /* Apply alternative box model */
+}
+
+body {
+  font-family: "Arial", sans-serif; /* Font family with a fallback */
+  font-size: 1rem; /* Use rem for font size */
+  line-height: 1.6; /* Increase readability */
+  color: #333; /* Text color */
+  background-color: #f9f9f9; /* Light background color */
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #006400; /* Dark green for headers */
+  text-align: center; /* Center align all headers */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Add text shaow */
+}
+
+p {
+  text-align: justify; /* Justify paragraph */
+  margin-bottom: 1.5rem; /* Add space after each paragraph */
+}
+
+img {
+  display: block;
+  margin: 0 auto; /* Center image */
+  width: 100%; /* Responsive image */
+  max-width: 400px; /* Maintain max size */
+}
+
+a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0056b3; /* Darker color on hover */
+  text-decoration: underline; /* Add underline on hover */
+}
+
+/* Navigation Styles */
+nav ul {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the navigation items */
+  background-color: #006400; /* Dark green background */
+}
+
+nav ul li {
+  margin: 0 1rem; /* Space out the navigation items */
+}
+
+nav ul li a {
+  color: white; /* White text for links */
+  padding: 0.5rem 1rem; /* Padding for clickable area */
+}
+
+nav ul li a:hover {
+  background-color: #004c00; /* Darker green on hover */
+}
+
+/* Wrapper Styles */
+.wrapper {
+  width: 90%; /* Width limit for content */
+  margin: 0 auto; /* Center the wrapper */
+  max-width: 1200px; /* Ensure it's not too wide */
+}
+
+/* Flexbox layout for main content */
+main {
+  display: flex;
+  flex-direction: row; /*set flex dirction to row */
+  flex-wrap: wrap; /* Allow wrap for smaller screens */
+  gap: 1.5rem; /* Space between elements */
+  justify-content: space-between; /*space between main elements */
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 2rem; /* Add space between sections */
+  padding: 1rem; /* Internal padding for sections */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #fff; /* White background */
+}
+
+/* Flex container for header and navigation */
+header {
+  display: flex;
+  flex-direction: row; /* Set flex direction to row */
+  justify-content: space-between; /* Space between the logo/title and nav */
+  align-items: center; /* Align vertically */
+  background-color: #006400; /* Dark green background */
+  padding: 1rem;
+}
+h1 {
+  margin: 0;
+  color: white;
+}
+
+/*Contact Form Styles */
+form {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  width: 100%; /* Form width is 100% of its container */
+  max-width: 600px; /* Ensure it's not too wide */
+  margin: 0 auto; /* Center the form */
+}
+label {
+  margin-top: 1rem; /* Add space above each label *
+  font-weight: bold; /* Bold text for labels */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width for input and textarea fields */
+  padding: 0.5rem; /* Internal padding */
+  margin-top: 0.5rem; /* Space between label and input */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 4px; /* Rounded corners */
+}
+
+input[type="checkbox"] {
+  margin-top: 1rem; /* Space above the checkbox */
+}
+
+button[type="submit"] {
+  background-color: #006400; /* Dark green for background */
+  color: white; /* White text for the button */
+  padding: 0.75rem;
+  margin-top: 1.5rem; /* Space above the button */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1rem; /* Set font size */
+}
+
+button[type="submit"]:hover {
+  background-color: #004c00; /* Darker green on hover */
+}
+
+/* Footer Styles */
+footer {
+  text-align: center; /* Center align the footer text */
+  margin-top: 2rem; /* Space above the footer */
+  padding: 1rem;
+  background-color: #f0f0f0; /* Light gray background */
+  border-top: 1px solid #ccc; /* Light border on top of footer */
+}
+
+footer a {
+  color: #007bff; /* Link color in the footer */
+}
+
+footer a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Underline on hover */
+}
